@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Databases</title>
+</head>
+
+<body class="flex-row fadein">
+
+    <nav class="flex-column">
+
+        <a href="index.html"><h2 id="arrow-back">BACK</h2></a>
+
+    </nav>
+    
+    <div class="container">
+
+        <h1>Databases</h1>
+
+        <p>Databases are a crucial component of web development, as they provide a way to store, manage, and retrieve data for web applications. There are several types of databases commonly used in web development, each with its own strengths and use cases. Here's an overview of the main types of databases:</p>
+
+        <ul>
+            <li>Relational Databases (RDBMS):
+                MySQL, PostgreSQL, Oracle, Microsoft SQL Server, and SQLite are examples of relational databases.
+                Data is organized into tables with predefined schemas (structure).
+                Relationships between tables are established using foreign keys.
+                Ideal for structured data and complex queries.
+                ACID (Atomicity, Consistency, Isolation, Durability) compliant, ensuring data integrity.
+                Commonly used for e-commerce, content management systems, and applications requiring complex data relationships.</li>
+            <li>NoSQL Databases:
+                MongoDB, Cassandra, Redis, and CouchDB are examples of NoSQL databases.
+                Designed for flexibility and scalability, making them suitable for handling unstructured or semi-structured data.
+                Commonly used for big data, real-time analytics, and applications with rapidly changing data requirements.
+                Types of NoSQL databases include document stores, key-value stores, column-family stores, and graph databases.</li>
+            <li>Key-Value Stores:
+                Redis, Amazon DynamoDB, and Cassandra fall into this category.
+                Data is stored as key-value pairs.
+                Efficient for caching, session management, and real-time analytics.
+                Scales horizontally to handle high traffic loads.</li>
+            <li>Document Stores:
+                MongoDB is a popular document store database.
+                Data is stored in semi-structured BSON (Binary JSON) documents.
+                Suitable for content management systems, catalogs, and applications with frequently changing data structures.</li>
+            <li>Column-Family Stores:
+                Apache Cassandra is a well-known column-family store.
+                Data is organized into column families, similar to tables in relational databases.
+                Scalable and designed for high write throughput.</li>
+            <li>Graph Databases:
+                Neo4j and Amazon Neptune are examples of graph databases.
+                Designed for handling data with complex relationships, such as social networks, recommendation engines, and fraud detection.
+                Data is represented as nodes and edges in a graph.</li>
+            <li>In-Memory Databases:
+                Redis is a popular in-memory database.
+                Data is stored in RAM for ultra-fast read and write operations.
+                Often used for caching, session storage, and real-time analytics.</li>
+            <li>Time-Series Databases:
+                InfluxDB and Prometheus are examples of time-series databases.
+                Optimized for handling time-series data, such as sensor data, logs, and metrics.
+                Efficient storage and retrieval of timestamped data points.</li>
+            <li>NewSQL Databases:
+                CockroachDB and Google Spanner are NewSQL databases.
+                Combine the benefits of traditional relational databases with horizontal scalability.
+                Ideal for applications that require ACID compliance and high availability.</li>
+        </ul>
+
+        <p class="last-padding">Selecting the right database for a web development project depends on factors such as data structure, scalability requirements, query complexity, and the nature of the application. In many cases, web developers work with a combination of different databases within a single application to meet specific data storage and retrieval needs.</p>
+
+    </div>
+
+</body>
+
+</html>

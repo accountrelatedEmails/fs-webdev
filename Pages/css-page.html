@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cascading Style Sheets</title>
+</head>
+
+<body class="flex-row fadein">
+
+    <nav class="flex-column">
+
+        <a href="index.html"><h2 id="arrow-back">BACK</h2></a>
+
+    </nav>
+    
+    <div class="container">
+
+        <h1>Cascading Style Sheets</h1>
+
+        <p>CSS, which stands for Cascading Style Sheets, is a fundamental technology used in web development to control the presentation, layout, and styling of web pages. CSS allows you to define how HTML elements should be displayed on the screen, making it an essential part of creating visually appealing and responsive websites. Here's an overview of how CSS works and its main components:</p>
+
+        <ul>
+
+            <li>Selectors: CSS uses selectors to target HTML elements that you want to style. Selectors can target elements by their element type (e.g., p for paragraphs), class (e.g., .header for elements with the class "header"), ID (e.g., #navbar for an element with the ID "navbar"), attributes, and more.</li>
+            <li>Properties: For each selected element, you can define one or more CSS properties that specify how the element should look or behave. Properties include things like color, font-size, background-color, margin, padding, border, and many others.</li>
+            <li>Values: Each property is assigned a value that determines its specific behavior. For example, you can set the color property to values like "red," "#FFA500" (a hexadecimal color code), or "rgb(255, 0, 0)" (an RGB color value).</li>
+            <li>Declaration Block: The combination of a property and its value is referred to as a "declaration." Declarations are grouped together within a set of curly braces {} to create a "declaration block." Multiple declaration blocks can be applied to a single selector.</li>
+            <pre>
+
+selector {  
+    property1: value1;  
+    property2: value2;  
+    /* More properties and values */  
+}  
+            </pre>
+            <li>Stylesheets: CSS styles are typically defined in external stylesheet files with a .css extension. You link these stylesheets to your HTML documents using the &lt;link&gt; element within the &lt;head&gt; section.</li>
+            <pre>
+
+&lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;  
+            </pre>
+            <li>Inline CSS: Alternatively, you can apply CSS styles directly within HTML elements using the style attribute. However, it's generally recommended to separate your HTML content from your CSS for better maintainability.</li>
+            <pre>
+
+&lt;p style="color: blue; font-size: 16px;"&gt;This is a blue paragraph with a 16px font size.&lt;/p&gt;
+            </pre>
+            <li>Cascading: The "Cascading" in CSS refers to the way styles are applied and can override each other. CSS rules can come from different sources, such as user styles, author styles (your stylesheets), and browser defaults. The specificity of selectors and the order of declaration can determine which styles take precedence.</li>
+            <li>Media Queries: CSS allows you to define different styles for different screen sizes and devices using media queries. This is crucial for creating responsive designs that adapt to various screen resolutions and orientations.</li>
+            <pre>
+
+@media screen and (max-width: 768px) {  
+    /* Styles for screens with a maximum width of 768px */  
+}    
+            </pre>
+            <li>Frameworks and Preprocessors: In addition to writing raw CSS, web developers often use CSS frameworks like Bootstrap and preprocessors like Sass or Less to streamline and enhance their CSS development process.</li>
+
+        </ul>
+
+        <p class="last-padding">CSS plays a crucial role in web development by allowing you to control the layout, typography, colors, and overall visual design of your web pages. When combined with HTML and JavaScript, it enables you to create interactive and aesthetically pleasing user interfaces for web applications and websites.</p>
+
+    </div>
+
+</body>
+
+</html>

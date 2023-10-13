@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fetch</title>
+</head>
+
+<body class="flex-row fadein">
+
+    <nav class="flex-column">
+
+        <a href="index.html"><h2 id="arrow-back">BACK</h2></a>
+
+    </nav>
+    
+    <div class="container">
+
+        <h1>Fetch</h1>
+
+        <p>The fetch API is a modern way to make network requests (typically HTTP requests) in JavaScript. It provides a more powerful and flexible alternative to the older XMLHttpRequest. The primary use of fetch is to retrieve data from a web server and work with the response.</p>
+
+        <ul>
+            <li>Making a Request:
+                To make a request, you call the fetch function and provide the URL you want to request data from. You can also include optional settings in an object, such as request method (GET, POST, etc.), headers, and more.</li>
+            <pre>
+
+fetch('https://api.example.com/data')  
+  .then(response => {  
+    // Handle the response here  
+  })  
+  .catch(error => {  
+    // Handle errors here  
+  });  
+            </pre>
+            <li>Handling the Response:
+                The fetch function returns a Promise that resolves to the response from the server. You can use .then() to handle the successful response and .catch() to handle errors.</li>
+            <pre>
+
+fetch('https://api.example.com/data')  
+  .then(response => {  
+    // Check if the response status indicates success (e.g., 200 OK)  
+    if (!response.ok) {  
+      throw new Error('Network response was not ok');  
+    }  
+    
+    // Parse the response (e.g., as JSON)  
+    return response.json();  
+  })  
+  .then(data => {  
+    // Work with the data here  
+  })  
+  .catch(error => {  
+    // Handle errors here  
+  });  
+            </pre>
+            <li>Parsing the Response:
+                You often need to parse the response data, especially if the server sends JSON or other structured data. You can use methods like .json(), .text(), or .blob() to extract and work with the data.</li>
+            <pre>
+                
+fetch('https://api.example.com/data')  
+  .then(response => response.json())  
+  .then(data => {  
+    // Work with the JSON data here  
+  });  
+            </pre>
+            <li>Handling Errors:
+                Use .catch() to handle network errors or issues with the request/response. You can log errors or provide appropriate user feedback.</li>
+            <pre>
+
+fetch('https://api.example.com/data')  
+  .then(response => response.json())  
+  .then(data => {  
+    // Work with the data here  
+  })  
+  .catch(error => {  
+    console.error('Fetch error:', error);  
+    // Handle errors here  
+  });  
+            </pre>
+            <li>Customizing the Request:
+                You can customize the request by specifying options in the fetch function. For example, you can set request headers, include a request body for methods like POST, and more.</li>
+            <pre>
+
+fetch('https://api.example.com/data', {  
+  method: 'POST',  
+  headers: {  
+    'Content-Type': 'application/json'  
+  },  
+  body: JSON.stringify({ key: 'value' })  
+})  
+  .then(response => response.json())  
+  .then(data => {  
+    // Work with the response data here  
+  });  
+            </pre>
+        </ul>
+
+        <p class="last-padding">The fetch API provides a flexible and promise-based approach to working with HTTP requests in JavaScript. It's widely used for fetching data from APIs, interacting with servers, and performing AJAX operations in modern web development.</p>
+
+    </div>
+
+</body>
+
+</html>

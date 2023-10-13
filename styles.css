@@ -1,0 +1,292 @@
+
+*{
+    box-sizing: border-box;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    margin: 0;
+    background-color: black;
+    position: relative;
+    color: aliceblue;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+pre {
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid white;
+    border-radius: 7px;
+    width: 50vw;
+    background-color: rgb(0, 11, 19);
+    overflow: scroll;
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+
+    font-size: 2rem;
+    margin: 0 auto 7rem;
+}
+
+li{
+    width: 50vw;
+    font-size: 2.5rem;
+    margin: 7rem auto;
+    text-align: center;
+    list-style: none;
+}
+
+p {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3rem;
+    width: 900px;
+}
+
+h1{
+    margin: 5rem auto;
+    font-size: 8rem;
+    text-align: center;
+    color: #f64c72;
+}
+
+h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    border: 1px solid white;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* The content */
+h6{
+    z-index: 1;
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 0 20px;
+    color: black;
+
+}
+
+.fadein {
+    animation-name: entry;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+nav {
+    border-right: 1px solid #f64c72;
+    width: 250px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+/* container for the flex-items */
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.homepage-container{
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+
+    transform: translate(-50%, 0%);
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+/* Bubbles containing the content */
+.object{
+    border: 5px solid #f64c72;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Keyframes for hover animation */
+@keyframes hover {
+    0% {
+      transform: scale(1.05);
+      color: #f64c72;
+
+    }
+  
+    100% {
+      transform: scale(1.1);
+      color: aliceblue;
+    }
+}
+
+/* Keyframes for unhover (revert) animation */
+@keyframes unhover {
+    0% {
+      transform: scale(1.1);
+      color: aliceblue;
+    }
+  
+    100% {
+      transform: scale(1);
+      color: #f64c72;
+    }
+}
+
+@keyframes entry {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes color-rise {
+    0% {
+        transform: scale(1);
+        color: aliceblue;
+    }
+
+    100% {
+        transform: scale(1.2);
+        filter: brightness(1);
+    }
+}
+
+@keyframes color-drop {
+    0% {
+        transform: scale(1.2);
+        filter: brightness(1);
+    }
+
+    100% {
+        transform: scale(1);
+        filter: brightness(5);
+    }
+}
+
+
+.object:hover, h6:hover{
+
+    animation-name: hover;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
+    
+}
+
+.object:not(:hover), h6:not(:hover){
+
+    animation-name: unhover;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
+    
+}
+
+#arrow-back {
+    color: aliceblue;
+    margin-top: 7rem;
+}
+
+#arrow-back:hover {
+    animation-name: hover;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
+}
+
+#arrow-back:not(:hover) {
+    animation-name: unhover;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
+}
+
+.last-padding{
+    padding-bottom: 7rem;
+}
+
+span {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+}
+
+.yellow {
+    color: rgb(225, 181, 125);
+}
+
+.green {
+    color: rgb(33, 158, 53);
+}
+
+.blue {
+    color: rgb(84, 114, 193);
+}
+
+.dark-blue {
+    color: rgb(27, 64, 114);
+}
+
+.grey-blue {
+    color: rgb(37, 60, 91);
+}
+
+.cyan {
+    color: rgb(43, 207, 247);
+}
+
+.pink {
+    color: rgb(236, 101, 197)
+}
+
+.purple {
+    color: rgb(139, 77, 169);
+}
+
+.saturated-blue {
+    color: rgb(29, 92, 254);
+}
+
+.italic {
+	font-style: italic;
+}
+
+.underl {
+    text-decoration: underline;
+}
+

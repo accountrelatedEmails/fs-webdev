@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cascading Style Sheets</title>
+</head>
+
+<body class="flex-row fadein">
+
+    <nav class="flex-column">
+
+        <a href="index.html"><h2 id="arrow-back">BACK</h2></a>
+
+    </nav>
+    
+    <div class="container">
+
+        <h1>JavaScript</h1>
+
+        <p>JavaScript is a vital programming language in web development that adds interactivity, dynamic behavior, and client-side scripting to web pages. It allows you to create responsive and engaging web applications. Here's an overview of JavaScript in web development:</p>
+
+        <ul>
+
+            <li>Client-Side Scripting: JavaScript is primarily used for client-side scripting, meaning it runs in the user's web browser. This enables dynamic interactions within the web page without the need to constantly communicate with the server.</li>
+            <li>Script Tag: To include JavaScript in an HTML document, you use the &lt;script&gt; tag. You can include JavaScript code inline within HTML or link to external JavaScript files.</li>
+            <pre>
+
+&lt;script&gt;  
+  // Inline JavaScript code  
+  // ...  
+&lt;/script&gt;  
+
+&lt;script src="script.js"&gt;&lt;/script&gt; &lt;!-- Linking to an external JavaScript file --&gt;  
+            </pre>
+            <li>Variables and Data Types: JavaScript supports various data types, including numbers, strings, booleans, objects, arrays, and more. You can declare variables using let, const, or var depending on the scope and mutability requirements.</li>
+            <pre>
+
+let name = "John";  
+const age = 30;  
+            </pre>
+            <li>Functions: JavaScript functions allow you to encapsulate reusable blocks of code. You can define functions with or without parameters and return values.</li>
+            <pre>
+
+function greet(name) {  
+  return "Hello, " + name + "!";  
+}  
+            </pre>
+            <li>DOM Manipulation: The Document Object Model (DOM) represents the structure of an HTML document. JavaScript can be used to access, modify, and manipulate elements in the DOM, enabling dynamic content updates and user interactions.</li>
+            <pre>
+
+const element = document.getElementById("myElement");  
+element.innerHTML = "New content";  
+            </pre>
+            <li>Event Handling: JavaScript can respond to various events triggered by user actions, such as clicks, keypresses, and mouse movements. Event listeners are used to execute functions when these events occur.</li>
+            <pre>
+
+const button = document.getElementById("myButton");  
+button.addEventListener("click", function() {  
+  alert("Button clicked!");  
+});  
+            </pre>
+            <li>Asynchronous Programming: JavaScript supports asynchronous operations through callbacks, promises, and async/await. This is crucial for handling tasks like fetching data from servers without blocking the user interface.</li>
+            <pre>
+
+<span class="yellow">fetch</span>(<span class="green">"https://api.example.com/data"</span>)
+.<span class="purple">then</span>(<span class="yellow">response</span> =><span class="yellow">response</span>.<span class="purple">json</span>())
+.<span class="purple">then</span>(<span class="dark-blue">data</span> => {
+  <span class="grey-blue">// <span class="italic">Process data</span></span>
+})
+.<span class="purple">catch</span>(<span class="dark-blue">error</span> => {
+<span class="grey-blue">// <span class="italic">Handle errors</span></span>
+});
+            </pre>
+            <li>Libraries and Frameworks: JavaScript has a vast ecosystem of libraries and frameworks that simplify common tasks and provide pre-built solutions. Examples include React, Angular, and Vue.js for building user interfaces, and jQuery for DOM manipulation.</li>
+            <li>AJAX: Asynchronous JavaScript and XML (AJAX) is a technique that allows you to make HTTP requests from JavaScript without reloading the entire page. This is used for fetching data and updating content dynamically.</li>
+            <li>ES6 and Beyond: JavaScript has evolved over the years, with ES6 (ECMAScript 2015) and subsequent versions introducing new features and syntax improvements. These additions enhance code readability and maintainability.</li>
+
+        </ul>
+
+        <p class="last-padding">JavaScript is a versatile and powerful language that, when combined with HTML and CSS, enables developers to create responsive and feature-rich web applications. It plays a crucial role in modern web development by providing the means to build interactive user interfaces, perform data manipulation, and communicate with web servers.</p>
+
+    </div>
+
+</body>
+
+</html>
